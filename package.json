@@ -1,0 +1,69 @@
+{
+  "name": "@amazingcat/amazing-iohook",
+  "version": "7.1.4",
+  "description": "Simplified fork of iohook — global keyboard and mouse listener",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo",
+    "install": "node install.js",
+    "example-counter": "node ./examples/counter.js",
+    "electron-example-counter": "electron ./examples/counter.js"
+  },
+  "repository": "https://github.com/cattr-app/amazing-iohook",
+  "preloadBinaries": {
+    "repo": "https://repo.amazingcat.net/node/amazing-iohook/builds",
+    "branch": "latest",
+    "arch": [
+      "linux64",
+      "darwin64",
+      "win3264"
+    ],
+    "runtime": {
+      "type": "electron",
+      "version": "7.1.4"
+    },
+    "signingKey": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUZuakNDQkFhZ0F3SUJBZ0lKQUppM3pKRVMreWxJTUEwR0NTcUdTSWIzRFFFQkN3VUFNSUhqTVFzd0NRWUQKVlFRR0V3SlNWVEVlTUJ3R0ExVUVDQXdWVUhKdmRtbHVZMlVnYjJZZ1RHVnVhVzVuY21Ga01SY3dGUVlEVlFRSApEQTVUZEM0Z1VHVjBaWEp6WW5WeVp6RVhNQlVHQTFVRUNnd09ZVzFoZW1sdVoyTmhkQ0JNVEVNeEpqQWtCZ05WCkJBc01IVUZ0WVhwcGJtY2dWR2x0WlNCRVpYWmxiRzl3YldWdWRDQlVaV0Z0TVRnd05nWURWUVFEREM5aGRDMXAKYjJodmIyc2dVSEpsWW5WcGJIUWdRbWx1WVhKcFpYTWdVMmxuYm1sdVp5QkRaWEowYVdacFkyRjBaVEVnTUI0RwpDU3FHU0liM0RRRUpBUllSZEc5QVlXMWhlbWx1WjJOaGRDNXVaWFF3SGhjTk1Ua3dNekkxTVRrMU9UVTFXaGNOCk1qa3dNekl5TVRrMU9UVTFXakNCNHpFTE1Ba0dBMVVFQmhNQ1VsVXhIakFjQmdOVkJBZ01GVkJ5YjNacGJtTmwKSUc5bUlFeGxibWx1WjNKaFpERVhNQlVHQTFVRUJ3d09VM1F1SUZCbGRHVnljMkoxY21jeEZ6QVZCZ05WQkFvTQpEbUZ0WVhwcGJtZGpZWFFnVEV4RE1TWXdKQVlEVlFRTERCMUJiV0Y2YVc1bklGUnBiV1VnUkdWMlpXeHZjRzFsCmJuUWdWR1ZoYlRFNE1EWUdBMVVFQXd3dllYUXRhVzlvYjI5cklGQnlaV0oxYVd4MElFSnBibUZ5YVdWeklGTnAKWjI1cGJtY2dRMlZ5ZEdsbWFXTmhkR1V4SURBZUJna3Foa2lHOXcwQkNRRVdFWFJ2UUdGdFlYcHBibWRqWVhRdQpibVYwTUlJQm9qQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FZOEFNSUlCaWdLQ0FZRUEwQ3hVUzNYTVVXam5MYTRkCkE0Unl6VStWSzRCZ0o3UGZwYWhuV2J0bXE0UDlFeDcveGIxWXN6bkVsZUZhUEFWZ0QxbHo1WnZKZkV1VCtzUUEKS0Z5SCtHa3ZkeFh5aVN6VGJNaTljRHpjeklKRzZuRXY4aDQrUkl5VXBMQTYyQVJsL2xJRlBsWnRJeFVkblZXUApBSEhrSlN1ZVV2RHBQc3U4VXMyd3ZyTGlyQTB6RlhKc0tSem1SZzE1Ylgzbm54NEJ0TnFLY0tNMWxoWVJtYXJtCnNmRFBGZ216UERBNDlMcGtqT0FGMEJwbVZFVXZpdkltZVY3TWNQdFJDUnhmaS8za0JUYzZWenZmVXpyVHBzSUwKMlRZK3k1alF6a3hCS0o5WjU1dU1QYVVqdzA0VkVEMHVLMmJQVnBLZ0l2YTFnY1FGRndPMm40THVGeExvN2owQQphVGt5bWZuLzF3S0NEVkFSSHlHZzlnczZhWWNhRERjd1drU2NzSHRtVWp3QjRCU0NneVY3OGlLOE02aWRqclhtClpjV0c1SFJKTDFDc3FDejQ0Y1h5a2NzQ2t2ekM5T1ZOVWZZVCt6cndpUVVxOTVQZ1BIV3BleVQxcmw0WVZiZGoKMzNuUnV1cS8wT0R4SGVyNlRUenBpSk9tZXMyTldON1FJMVFuTFFrcXZsRGkvV0tMQWdNQkFBR2pVekJSTUIwRwpBMVVkRGdRV0JCVFdRZG9DQUtMeGZ0Y3VMeFhzRFpWZEZickkyakFmQmdOVkhTTUVHREFXZ0JUV1Fkb0NBS0x4CmZ0Y3VMeFhzRFpWZEZickkyakFQQmdOVkhSTUJBZjhFQlRBREFRSC9NQTBHQ1NxR1NJYjNEUUVCQ3dVQUE0SUIKZ1FBVFJZZEVUT2JuQ2xLM3JLbFJNTzBtNk1sbzJJaFl6dklkaW01Ny9oelFtaWlZMlgvbmg3dDNxemtucmovYwpyMWVWVG5VNUNWZ09RM2tUWGJOR0ZBaXk0WTR4bmVkRE5YMFcwVThlaGFtaHcvbnlJWjJPS1M3LzcrdEF1aGw4CnZ4WFB6RVl3RktreDA2bEFpMTBzMFloRVpHUFEzWkN5Z2FYZTZZQ3FYN05lNXV5SElGaGxScS9CcjhLcmtaK1UKMzQyRGtnSXQ5alFGaVhSeStMYzNQZHpJcnVHZTNkcGhQTytxVzlta1RiVlR0Ukd4S1lQQVFrM25xWlFsSjA4ZgpCc1V4bVpyUWpXeGZXK3RhdjBzbyswV2VEdzNqTHU4UlArSVd4am53WmIrdFVDOU1Mc0l0UzhNMlNCdndnQnJOCkRGbmdXWXVSU0ZiRFMvbjZpVjBRVXdNUnpCamo4RWRsWm5XZmhPNEJLajdIUUttN0tIM1R0VHpheGxmdGxMN3IKWDQ2SjdERkowREIrWUhqeG1CbDFLZCs2MnZ2MlduK1h6MXcrNjA5aTRHVWRBZ1RyMUIrTTEvYWFENUZQcjFmTwpnY2M4by9vK1RURUhIeWF3bDRGeDV0YkVxUGllL3hCWUIxMnFpMEZxS1JMdndQQzNvSTJibTR5SGd0SkJZTUYyCklpND0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo="
+  },
+  "author": "Cattr Team & Contributors <hi@cattr.app>",
+  "license": "MIT",
+  "xo": {
+    "space": 2,
+    "rules": {
+      "no-multiple-empty-lines": [
+        "error",
+        {
+          "max": 2,
+          "maxEOF": 1
+        }
+      ],
+      "max-statements-per-line": [
+        "error",
+        {
+          "max": 2
+        }
+      ],
+      "padded-blocks": [
+        "error",
+        "always"
+      ],
+      "object-curly-spacing": [
+        "error",
+        "always"
+      ],
+      "curly": [
+        "error",
+        "multi"
+      ],
+      "no-return-assign": [
+        "error",
+        "except-parens"
+      ]
+    }
+  },
+  "devDependencies": {
+    "xo": "^0.25.3"
+  },
+  "optionalDependencies": {
+    "electron": "7.1.4"
+  }
+}
